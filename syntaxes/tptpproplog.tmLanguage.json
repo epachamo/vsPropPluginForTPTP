@@ -1,0 +1,10 @@
+{
+  "scopeName": "source.tptpproplog",
+  "patterns": [
+    { "match": "%.*$", "name": "comment.line.percent.tptpproplog" },
+    { "match": "\bfof\b", "name": "keyword.control.fof.tptpproplog" },
+    { "match": "\b(axiom|conjecture)\b", "name": "keyword.control.type.tptpproplog" },
+    { "match": "<=>|<~>|=>|<=", "name": "keyword.operator.logic.tptpproplog" },
+    { "match": "\b[a-z][A-Za-z0-9_]*\b", "name": "variable.label.tptpproplog" }
+  ]
+}
