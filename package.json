@@ -1,0 +1,46 @@
+{
+  "name": "tptpproplog",
+  "displayName": "TPTP Propositional Logic",
+  "description": "Support for the TPTP language (Propositional Logic only)",
+  "version": "0.0.1",
+  "publisher": "epachamo",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onLanguage:tptpproplog"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "tptpproplog",
+        "aliases": [
+          "TPTP Propositional Logic",
+          "tptpproplog"
+        ],
+        "extensions": [
+          ".fof"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "tptpproplog",
+        "scopeName": "source.tptpproplog",
+        "path": "./syntaxes/tptpproplog.tmLanguage.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "tsc -p ./"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0",
+    "@types/vscode": "^1.50.0"
+}
+}
